@@ -62,18 +62,19 @@ function App() {
     //     getData(user);
     // }, []);
 
-    //우선은 토큰이 있으면 무조건 로그인 하도록 하였음
+
     //setAuth의 조건은? 1. 토큰이 존재하고, 2. 토큰의 값이 DB에 있는 토큰값과 같아야한다.
-    useEffect(() => {
-        if (token) {
-            if (getData(user) === token) {
-                setAuth(true);
-            }
-        }
-    }, []);
+    // useEffect(() => {
+    //     if (token) {
+    //         if (getData(user) === token) {
+    //             setAuth(true);
+    //         }
+    //     }
+    // }, []);
 
 
     //처음에 토큰이 있으면 바로 로그인
+    //우선은 토큰이 있으면 무조건 로그인 하도록 하였음
     useEffect(() => {
         if (token) {
             setAuth(true);
