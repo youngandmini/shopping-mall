@@ -1,0 +1,45 @@
+
+.category-container {
+    text-align: center;
+    font-size: 70px;
+}
+
+.category-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.category-button-container button {
+
+    width: 150px;
+    height: 50px;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: 2px solid #56296e;
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: all 0.25s;
+}
+
+.category-button-container button:hover {
+    background: #56296e;
+    color: white;
+}
+
+.selected-category {
+    background: #56296e;
+    color: white;
+}
+
+.unselected-category {
+    background: none;
+    cursor: pointer;
+    color: #56296e;
+}
